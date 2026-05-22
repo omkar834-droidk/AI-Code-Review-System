@@ -13,20 +13,23 @@ def getdiff():
 
 
 client = genai.Client()
+client = genai.Client(
+    api_key=os.getenv("GEMINI_API_KEY")
+)
 
 
 
 
 def get_commit_info():
 
-    commit = subprocess.check_output(
-        ["git", "log", "-1", "--pretty=format:%H%n%an%n%s"],
-        text=True
-    )
+ diff = subprocess.check_output(
+    ['git', 'diff', 'HEAD~1', 'HEAD'],
+    text=True
+)   
+ commit_id, author, message = commit_id.split("\n")
 
-    commit_id, author, message = commit.split("\n")
 
-    return {
+ return {
         "commit_id": commit_id,
         "author": author,
         "message": message
