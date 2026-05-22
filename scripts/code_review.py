@@ -4,7 +4,7 @@ from google import genai
 import smtplib
 from email.message import EmailMessage
 
-from torch import diff
+
 
 
 def getdiff():
