@@ -1,4 +1,4 @@
-# 🚀 AI Code Reviewer  
+# 🚀 AI Code Reviewer
 
 <div align="center">
 
@@ -20,14 +20,16 @@ Automatically reviews code commits using **Gemini AI** and sends beautiful **HTM
 
 AI Code Reviewer is a fully automated AI-powered GitHub workflow system that analyzes code commits, reviews code quality using Gemini AI, generates professional HTML reports, and automatically sends email feedback to developers.
 
-This project combines:
+---
 
-- 🤖 AI Engineering
-- ⚡ GitHub Automation
-- 🔄 CI/CD
-- 📧 Email Systems
-- 🧠 Prompt Engineering
-- 🛠️ DevOps Concepts
+# 🧠 This Project Combines
+
+- 🤖 AI Engineering  
+- ⚡ GitHub Automation  
+- 🔄 CI/CD  
+- 📧 Email Systems  
+- 🧠 Prompt Engineering  
+- 🛠️ DevOps Concepts  
 
 into one real-world automation project.
 
@@ -63,8 +65,6 @@ into one real-world automation project.
    Generate HTML AI Report
               ↓
     Send Beautiful Email
-
-
 🧠 AI Review Analysis
 
 The AI automatically checks for:
