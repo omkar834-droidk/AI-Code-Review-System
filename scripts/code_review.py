@@ -13,7 +13,7 @@ def getdiff():
 clinet = genai.Client()
 
 
-def send_email( html_content):
+def send_email(html_content):
     msg = EmailMessage()
     msg.set_content("please find the code review feedback in html format below:")
     msg['Subject'] = 'Code Review Feedback: ' 
@@ -21,11 +21,13 @@ def send_email( html_content):
     msg['To'] = 'salunkeomkar834@gmail.com'  # Replace with recipient's email
     msg.add_alternative(html_content, subtype='html')
 
-    with smtplib.SMTP('smtp.gmail.com', 587) as server:
+    # Use Gmail's SMTP server with proper TLS setup
+    server = smtplib.SMTP('smtp.gmail.com', 587)  # Port 587 for TLS
+    server.starttls()  # Enable TLS encryption BEFORE login
+    server.login('salunkeomkar834@gmail.com', os.getenv('MAIL_PASSWORD'))
+    server.send_message(msg)
+    server.quit()
     
-        server.login('salunkeomkar834@gmail.com', os.getenv('MAIL_PASSWORD'))
-        server.send_message(msg)
-
     return "Email sent successfully!"
 
 
