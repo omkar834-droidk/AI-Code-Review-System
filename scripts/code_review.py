@@ -39,8 +39,8 @@ def main():
         model="gemini-3-flash-preview",
         contents=promt
     )
-    html_content = response.text
-    send_email(html_content)
+    html = response.text
+    send_email(html)
     
 
 main()
