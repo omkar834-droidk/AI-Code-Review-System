@@ -1,98 +1,58 @@
+````md
+# 🚀 AI Code Reviewer
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![Gemini](https://img.shields.io/badge/Gemini-AI-orange?style=for-the-badge&logo=google)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-black?style=for-the-badge&logo=githubactions)
+![Status](https://img.shields.io/badge/Status-Working-brightgreen?style=for-the-badge)
+
+### ⚡ AI-Powered GitHub Automation System
+
+Automatically reviews code commits using Gemini AI and sends professional HTML email reports.
+
+</div>
+
+---
+
+# ✨ Features
+
+✅ AI Code Review  
+✅ GitHub Actions Automation  
+✅ HTML Email Reports  
+✅ Security Detection  
+✅ Code Quality Score  
+✅ Commit Analysis  
+
+---
+
 # 🛠️ Tech Stack
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-Backend-blue?style=for-the-badge&logo=python)
-
-![Gemini AI](https://img.shields.io/badge/Gemini-AI-orange?style=for-the-badge&logo=google)
-
-![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-black?style=for-the-badge&logo=githubactions)
-
-![SMTP](https://img.shields.io/badge/SMTP-Email-success?style=for-the-badge)
-
-![Git](https://img.shields.io/badge/Git-Version%20Control-red?style=for-the-badge&logo=git)
+![Python](https://img.shields.io/badge/Python-Backend-blue?style=flat-square&logo=python)
+![Gemini AI](https://img.shields.io/badge/Gemini-AI-orange?style=flat-square&logo=google)
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-Automation-black?style=flat-square&logo=githubactions)
+![SMTP](https://img.shields.io/badge/SMTP-Email-success?style=flat-square)
 
 </div>
 
 ---
 
-# ⚡ Workflow Architecture
+# ⚡ Workflow
 
-<div align="center">
-
-🚀 Git Push  
-⬇️  
-⚡ GitHub Actions Trigger  
-⬇️  
-📂 Get Latest Git Diff  
-⬇️  
-🤖 Gemini AI Analysis  
-⬇️  
-📧 Generate HTML Report  
-⬇️  
-✅ Send Review Email  
-
-</div>
-
----
-
-# 🔥 Features
-
-<div align="center">
-
-✨ AI-Powered Code Review  
-
-✨ Automatic GitHub Workflow  
-
-✨ HTML Email Reports  
-
-✨ Security Analysis  
-
-✨ Code Quality Score  
-
-✨ Severity Detection  
-
-✨ Commit Tracking  
-
-✨ Secure GitHub Secrets  
-
-</div>
-
----
-
-# 📧 Email Report Includes
-
-<div align="center">
-
-🔥 Commit Details  
-
-🔥 AI Summary  
-
-🔥 Severity Detection  
-
-🔥 Suggested Fixes  
-
-🔥 Final Score  
-
-🔥 Beautiful HTML UI  
-
-</div>
-
----
-
-# 🔐 Security
-
-<div align="center">
-
-✅ GitHub Secrets  
-
-✅ Secure SMTP Authentication  
-
-✅ Hidden API Credentials  
-
-❌ No Hardcoded Passwords  
-
-</div>
+```bash
+Git Push
+   ↓
+GitHub Actions
+   ↓
+Gemini AI Review
+   ↓
+HTML Report
+   ↓
+Email Sent
+````
 
 ---
 
@@ -105,54 +65,34 @@ AI-Code-Reviewer/
 ├── scripts/code_review.py
 ├── requirements.txt
 └── README.md
-🌍 Real-World Use Cases
+```
+
+---
+
+# 🔐 Security
+
+✅ GitHub Secrets
+✅ Secure SMTP Authentication
+❌ No Hardcoded Passwords
+
+---
+
+# 🚀 Future Improvements
+
+* PR Review Bot
+* Dashboard UI
+* MongoDB Integration
+* Slack Notifications
+
+---
+
+# 👨‍💻 Author
+
 <div align="center">
 
-✅ Automated Code Reviews
-
-✅ AI DevOps Workflow
-
-✅ Team Code Monitoring
-
-✅ Security Detection
-
-✅ Continuous Code Analysis
-
-</div>
-🚀 Future Improvements
-<div align="center">
-
-🔥 PR Review Bot
-
-🔥 Dashboard UI
-
-🔥 MongoDB Integration
-
-🔥 Slack Notifications
-
-🔥 PDF Reports
-
-</div>
-👨‍💻 Author
-<div align="center">
-Omkar Salunke
+## Omkar Salunke
 
 🚀 AI & Data Science Enthusiast
 
-💻 Building Real-World AI Automation Systems
-
 </div>
-⭐ Final Result
-<div align="center">
-
-An AI-powered GitHub automation system that combines:
-
-✅ AI Engineering
-✅ GitHub Automation
-✅ CI/CD
-✅ DevOps
-✅ Prompt Engineering
-
-into one powerful real-world project 🚀
-
-</div> ```
+```
