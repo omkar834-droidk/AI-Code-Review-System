@@ -21,4 +21,4 @@ jobs:
            python -m pip install --upgrade pip
            pip install -r requirements.txt
        - name: run code review Script
-         run: python ./scripts/python_script.py
+         run: python scripts/code_review.py
