@@ -22,5 +22,5 @@ jobs:
            pip install -r requirements.txt
            
            - name: run code review Script
-            run: python ./scripts/code_review.py
+            run: python ./scripts/python script.py
           
