@@ -84,79 +84,97 @@ into one real-world automation project.
 ✨ Secure GitHub Secrets integration  
 
 ---
-
-<br>
-
 # ⚡ Workflow Architecture
 
-```bash
-          Git Push
-              ↓
-     GitHub Actions Trigger
-              ↓
-      Get Latest Git Diff
-              ↓
-      Gemini AI Analysis
-              ↓
-   Generate HTML AI Report
-              ↓
-    Send Beautiful Email
-<br>
-🧠 AI Review Analysis
 <br>
 
-The AI automatically checks for:
+<div align="center">
 
-<br>
+| STEP | PROCESS |
+|---|---|
+| 🚀 1 | Developer Pushes Code |
+| ⚡ 2 | GitHub Actions Trigger |
+| 📂 3 | Get Latest Git Diff |
+| 🤖 4 | Gemini AI Reviews Code |
+| 📧 5 | Generate HTML Report |
+| ✅ 6 | Send Beautiful Email |
 
-✅ Bugs and logical issues
-
-✅ Security vulnerabilities
-
-✅ Performance optimizations
-
-✅ Code readability
-
-✅ Clean code practices
-
-✅ Best practice violations
-
-✅ Maintainability issues
-
-<br>
-📧 HTML Email Report
-<br>
-
-The generated email includes:
-
-<br>
-
-🔥 Commit Details
-
-🔥 AI Review Summary
-
-🔥 Severity Detection
-
-🔥 Suggested Fixes
-
-🔥 Final Code Quality Score
-
-🔥 Beautiful Modern HTML Design
-
-<br>
-🛠️ Tech Stack
-<br> <div align="center">
-Technology	Usage
-🐍 Python	Backend Logic
-🤖 Gemini AI	AI Code Review
-⚡ GitHub Actions	Workflow Automation
-📧 SMTP	Email Sending
-🧠 Prompt Engineering	AI Instructions
-🎨 HTML/CSS	Email UI
-🔄 Git	Commit Tracking
 </div>
+
 <br>
-📂 Project Structure
+
+---
+
+# 🧠 AI Review Analysis
+
+<br>
+
+<div align="center">
+
+| ✅ AI Checks |
+|---|
+| Bugs and Logical Issues |
+| Security Vulnerabilities |
+| Performance Optimizations |
+| Code Readability |
+| Clean Code Practices |
+| Best Practice Violations |
+| Maintainability Issues |
+
+</div>
+
+<br>
+
+---
+
+# 📧 HTML Email Report
+
+<br>
+
+<div align="center">
+
+| 🔥 Report Features |
+|---|
+| Commit Details |
+| AI Review Summary |
+| Severity Detection |
+| Suggested Fixes |
+| Final Code Quality Score |
+| Beautiful Modern HTML Design |
+
+</div>
+
+<br>
+
+---
+
+# 🛠️ Tech Stack
+
+<br>
+
+<div align="center">
+
+| Technology | Usage |
+|---|---|
+| 🐍 Python | Backend Logic |
+| 🤖 Gemini AI | AI Code Review |
+| ⚡ GitHub Actions | Workflow Automation |
+| 📧 SMTP | Email Sending |
+| 🧠 Prompt Engineering | AI Instructions |
+| 🎨 HTML/CSS | Email UI |
+| 🔄 Git | Commit Tracking |
+
+</div>
+
+<br>
+
+---
+
+# 📂 Project Structure
+
+<br>
+
+```bash id="n5y23d"
 AI-Code-Reviewer/
 │
 ├── .github/
@@ -171,27 +189,18 @@ AI-Code-Reviewer/
 └── README.md
 <br>
 🔐 Security
-<br>
-
-This project uses:
-
-<br>
-
-✅ GitHub Secrets
-
-✅ Secure SMTP Authentication
-
-✅ Environment Variables
-
-✅ Hidden API Credentials
-
-<br>
-
-❌ No hardcoded API keys
-
-❌ No exposed passwords
-
-<br>
+<br> <div align="center">
+✅ Security Features
+GitHub Secrets
+Secure SMTP Authentication
+Environment Variables
+Hidden API Credentials
+</div> <br> <div align="center">
+❌ Protected Against
+Hardcoded API Keys
+Exposed Passwords
+Credential Leaks
+</div> <br>
 ⚙️ Setup Guide
 <br>
 1️⃣ Clone Repository
@@ -201,73 +210,53 @@ git clone https://github.com/your-username/AI-Code-Reviewer.git
 pip install -r requirements.txt
 <br>
 3️⃣ Configure GitHub Secrets
-
-Go to:
-
-Settings → Secrets and Variables → Actions
-<br>
-
-Add:
-
+<br> <div align="center">
 Secret Name	Description
 GEMINI_API_KEY	Gemini API Key
 MAIL_PASSWORD	Gmail App Password
-<br>
+</div> <br>
 🚀 GitHub Actions Workflow
-<br>
-
-Runs automatically on every push to the main branch.
-
+<br> <div align="center">
+🔄 Trigger
+Push to Main Branch
+</div> <br>
 on:
   push:
     branches:
       - main
 <br>
 📸 Example Usage
+<br>
 git add .
 
 git commit -m "Added authentication feature"
 
 git push
-<br>
-
-↓
-
-<br>
-📧 AI review email automatically delivered.
-<br>
+<br> <div align="center">
+📧 AI Review Email Automatically Delivered
+</div> <br>
 👨‍💻 Example AI Review Output
-🔴 Critical Issue Found
-Hardcoded API key detected in login.py
-
-🟠 Medium Issue
-Unused variable found in auth.py
-
-🟢 Good Practice
-Code structure is clean and readable
-
-Final Score: 8/10
-<br>
+<br> <div align="center">
+Severity	Issue
+🔴 Critical	Hardcoded API key detected
+🟠 Medium	Unused variable found
+🟢 Good	Code structure is clean
+</div> <br> <div align="center">
+⭐ Final Score: 8/10
+</div> <br>
 🌍 Real-World Use Cases
-<br>
-
-✅ Automated pull request reviews
-
-✅ Team code quality monitoring
-
-✅ Developer productivity improvement
-
-✅ Security vulnerability detection
-
-✅ AI-powered DevOps workflows
-
-✅ Continuous code analysis systems
-
-<br>
+<br> <div align="center">
+🚀 Use Cases
+Automated Pull Request Reviews
+Team Code Quality Monitoring
+Developer Productivity Improvement
+Security Vulnerability Detection
+AI-Powered DevOps Workflows
+Continuous Code Analysis Systems
+</div> <br>
 🚀 Future Improvements
-<br>
+<br> <div align="center">
 🔥 Planned Features
-<br>
 PR Review Bot
 Dashboard UI
 MongoDB Integration
@@ -278,92 +267,66 @@ PDF Report Generation
 AI Suggestions Dashboard
 Code History Analytics
 Team Collaboration Features
-<br>
+</div> <br>
 📈 Future Scope
-<br>
-
-This project can be extended into:
-
-<br>
-
-✅ SaaS Product
-
-✅ AI DevOps Platform
-
-✅ Enterprise Code Review System
-
-✅ Team Collaboration Tool
-
-✅ AI Security Scanner
-
-<br>
+<br> <div align="center">
+🌟 Future Expansion
+SaaS Product
+AI DevOps Platform
+Enterprise Code Review System
+Team Collaboration Tool
+AI Security Scanner
+</div> <br>
 🎯 Learning Outcomes
-<br>
-
-This project demonstrates knowledge of:
-
-<br>
-
-✅ Python Automation
-
-✅ GitHub Actions
-
-✅ API Integration
-
-✅ SMTP Email Systems
-
-✅ Prompt Engineering
-
-✅ AI Workflows
-
-✅ CI/CD Concepts
-
-✅ DevOps Automation
-
-<br>
+<br> <div align="center">
+📚 Skills Demonstrated
+Python Automation
+GitHub Actions
+API Integration
+SMTP Email Systems
+Prompt Engineering
+AI Workflows
+CI/CD Concepts
+DevOps Automation
+</div> <br>
 👨‍💻 Author
-<div align="center">
+<br> <div align="center">
 Omkar Salunke
 
 🚀 AI & Data Science Enthusiast
 
 💻 Building Real-World AI Automation Systems
 
-</div>
-<br>
+</div> <br>
 ⭐ Support
-<br>
+<br> <div align="center">
 
-If you like this project:
+⭐ Star the Repository
 
-<br>
+🍴 Fork the Project
 
-⭐ Star the repository
+🚀 Share with Developers
 
-🍴 Fork the project
-
-🚀 Share with developers
-
-<br>
+</div> <br>
 🔥 Final Result
-<br>
+<br> <div align="center">
 
 An industry-style AI automation system that combines:
 
 <br>
 
 ✅ AI Engineering
-
 ✅ GitHub Automation
-
 ✅ CI/CD
-
 ✅ DevOps
-
 ✅ Email Systems
-
 ✅ Prompt Engineering
 
 <br>
 
 into one powerful real-world project 🚀
+
+</div> ```
+
+<br>
+
