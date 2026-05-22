@@ -48,6 +48,7 @@ Gemini AI Review
 HTML Report
    ↓
 Email Sent
+---
 📂 Project Structure
 AI-Code-Reviewer/
 │
@@ -55,15 +56,18 @@ AI-Code-Reviewer/
 ├── scripts/code_review.py
 ├── requirements.txt
 └── README.md
+---
 🔐 Security
 GitHub Secrets
 Secure SMTP Authentication
 No Hardcoded Passwords
+---
 🚀 Future Improvements
 PR Review Bot
 Dashboard UI
 MongoDB Integration
 Slack Notifications
+---
 👨‍💻 Author
 Omkar Salunke
 
