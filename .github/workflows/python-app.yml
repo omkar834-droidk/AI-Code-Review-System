@@ -24,6 +24,7 @@ jobs:
 
          env:
             GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+            MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
 
 
          run: python scripts/code_review.py

@@ -1,6 +1,8 @@
 import subprocess
 import os
 from google import genai
+import smtplib
+from email.message import EmailMessage
 
 
 def getdiff():
@@ -11,6 +13,24 @@ def getdiff():
 clinet = genai.Client()
 
 
+def send_email( html_content):
+    msg = EmailMessage()
+    msg.set_content("please find the code review feedback in html format below:")
+    msg['Subject'] = 'Code Review Feedback: ' 
+    msg['From'] = 'salunkeomkar834@gmail.com'  # Replace with your email
+    msg['To'] = 'salunkeomkar834@gmail.com'  # Replace with recipient's email
+    msg.add_alternative(html_content, subtype='html')
+
+    with smtplib.SMTP('smtp.gmail.com', 587) as server:
+    
+        server.login('salunkeomkar834@gmail.com', os.getenv('MAIL_PASSWORD'))
+        server.send_message(msg)
+
+    return "Email sent successfully!"
+
+
+
+ 
 
 def main():
     diff = getdiff()
@@ -19,7 +39,8 @@ def main():
         model="gemini-3-flash-preview",
         contents=promt
     )
-    print("code review feedback:")
-    print(response.text)
+    html_content = response.text
+    send_email(html_content)
+    
 
 main()
