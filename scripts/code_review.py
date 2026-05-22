@@ -152,9 +152,9 @@ client = genai.Client(
 def getdiff():
 
     diff = subprocess.check_output(
-        ['git', 'diff', 'HEAD~1', 'HEAD'],
-        text=True
-    )
+    ['git', 'show'],
+    text=True
+)
 
     return diff[:15000]
 
