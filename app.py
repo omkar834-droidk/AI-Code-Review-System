@@ -10,4 +10,4 @@ b=4
 print(a+b)
 
 
-rint('hello world')
+print('hello world')
